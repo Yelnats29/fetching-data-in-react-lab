@@ -5,7 +5,7 @@ import StarshipCard from './StarshipCard';
 
 const StarshipList = ({ starships }) => {
   return (
-    <div>
+    <div className="container">
       {starships.map((starship) => (
         <StarshipCard key={starship.id} starship={starship} />
       ))}

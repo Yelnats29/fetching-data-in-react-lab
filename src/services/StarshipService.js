@@ -22,7 +22,7 @@ const searchShip = async (shipNumber) => {
         console.log('Search Data:', data);
         return data.results;
     } catch (err) {
-        console.error (err);
+        console.error(err);
         return [];
     }
 };

@@ -19,7 +19,7 @@ const StarshipSearch = ({ onSearch }) => {
         <section>
             <h2>Search</h2>
             <form onSubmit={handleSubmit}>
-                <label>Select a Ship Number:</label>
+                <label>Select a Ship:</label>
                 <input
                     type="text"
                     placeholder="Search starships..."
