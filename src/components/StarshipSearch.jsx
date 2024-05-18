@@ -1,13 +1,14 @@
 // SEARCH FORM GOES HERE
 
 import React, { useState } from 'react';
+import './StarshipSearch.css';
 
 const StarshipSearch = ({ onSearch }) => {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleInputChange = (event) => {
         setSearchQuery(event.target.value);
-        
+
     };
 
     const handleSubmit = (event) => {
@@ -22,7 +23,7 @@ const StarshipSearch = ({ onSearch }) => {
                 <label>Select a Ship:</label>
                 <input
                     type="text"
-                    placeholder="Search starships..."
+                    placeholder="Search starship's name..."
                     value={searchQuery}
                     onChange={handleInputChange}
                 />

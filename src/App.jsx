@@ -34,11 +34,13 @@ const App = () => {
   };
 
   return (
-    <section>
-      <h1>Star Wars API</h1>
-      <div>
+    <section className='app-container'>
+      <header>
+        <h1>Star Wars API</h1>
+      </header>
+      <div className='search-container'>
         <StarshipSearch onSearch={handleSearch} />
-        <h1>List of Starships</h1>
+        <h2>List of Starships</h2>
         <StarshipList starships={filteredStarships} />
       </div>
     </section>
